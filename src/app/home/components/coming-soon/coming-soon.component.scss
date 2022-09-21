@@ -35,9 +35,8 @@
       margin-bottom: 2rem !important;
     }
   }
-}
-@media only screen and (max-device-width: 767px) {
-  .wrapper {
+
+  @include media-breakpoint-down(md) {
     background-image: url("~src/assets/images/coming-soon/mobile-bg.svg") !important;
   }
 }
