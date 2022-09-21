@@ -11,33 +11,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { LottieModule } from 'ngx-lottie';
-import { FooterComponent } from './components/footer/footer.component';
-import { NavbarSectionComponent } from './components/navbar-section/navbar-section.component';
-import { WelcomeSectionComponent } from './components/welcome-section/welcome-section.component';
-import { ConnectSectionComponent } from './components/connect-section/connect-section.component';
-import { OurStorySectionComponent } from './components/our-story-section/our-story-section.component';
-import { OffersSectionComponent } from './components/offers-section/offers-section.component';
-import { InspirationSectionComponent } from './components/inspiration-section/inspiration-section.component';
-import { HelloSectionComponent } from './components/hello-section/hello-section.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { CountDownTimerComponent } from './components/coming-soon/count-down-timer/count-down-timer.component';
-import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    FooterComponent,
-    ComingSoonComponent,
-    CountDownTimerComponent,
-    NavbarSectionComponent,
-    WelcomeSectionComponent,
-    ConnectSectionComponent,
-    OurStorySectionComponent,
-    OffersSectionComponent,
-    InspirationSectionComponent,
-    HelloSectionComponent,
-    GalleryComponent,
-  ],
+  declarations: [HomeComponent, ComingSoonComponent, CountDownTimerComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

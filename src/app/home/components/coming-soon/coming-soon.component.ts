@@ -7,9 +7,7 @@ import {
 } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { SubSink } from './services/subsink';
 import { AnimationOptions } from 'ngx-lottie';
-// import { WaitingListService } from './services/waiting-list.service';
 
 @Component({
   selector: 'app-coming-soon',
@@ -29,11 +27,6 @@ import { AnimationOptions } from 'ngx-lottie';
   ],
 })
 export class ComingSoonComponent implements OnInit {
-  subs = new SubSink();
-  formGroup = this.fb.group({
-    email: ['', [Validators.required, Validators.email]],
-  });
-
   fadeOut: string = '';
   state = '';
   comingSoon: AnimationOptions = {
@@ -60,16 +53,4 @@ export class ComingSoonComponent implements OnInit {
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {}
-
-  submitApplicationFormHandler(e: any) {
-    // if (this.formGroup.invalid) return;
-    // this.subs.sink = this.waitingListService
-    //   .create(this.formGroup.value)
-    //   .subscribe({
-    //     next: () => {
-    //       this.fadeOut = 'fade-out';
-    //     },
-    //     error: () => {},
-    //   });
-  }
 }
